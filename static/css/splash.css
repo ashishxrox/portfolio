@@ -1,0 +1,54 @@
+.intro{
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #002B5B;
+	transition: 1s;
+}
+
+.logo-header{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+
+}
+
+.logo{
+	position: relative;
+	display: inline-block;
+	bottom: -20px;
+	opacity: 0;
+	font-family: 'DynaPuff', cursive;
+	font-size: 100px;
+}
+#sec{
+	margin-left: -6px;
+}
+
+.logo.active{
+	bottom: 0;
+	opacity: 1;
+	transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+	bottom: 150px;
+	opacity: 0;
+	transition: ease-in-out 0.5s;
+}
+
+
+
+@media only screen and (max-width: 770px){
+	.logo{
+		font-size: 32px;
+	}
+	.logo-header{
+		top: 30%;
+	}
+}

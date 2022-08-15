@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../static/css/file1.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/splash.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap" rel="stylesheet">
+	<title>Portfolio</title>
+</head>
+<body onload="myPre()">
+	<!-- INTRO -->
+	<div class="intro">
+		<h1 class="logo-header">
+			<span class = 'logo'>
+				ASH
+			</span>
+			<span class="logo" id="sec">
+				ISH
+			</span>
+		</h1>
+	</div>
+	<!-- MAIN HTML -->
+	<div id="loading"></div>
+	<header>
+		<nav>
+			<div class="HOMElogo"><h1>PORTFO<span>LIO</span></h1>
+			</div>
+			<div class="menu">
+				<a href="#">Home</a>
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#services">Services</a>
+				<a href="#works">Works</a>
+				<a href="#contact">Contact</a>
+			</div>
+		</nav>
+		<div class="text">
+			<p>Hello, I am</p>
+			<h2>Ashish Nair</h2>
+			<p>And I am a <span id="tpd"></span></p>
+			<!-- <a href="#contact" class="btn">Hire Me</a> -->
+		</div>
+
+	</header>
+	<section id="about">
+			<div class="sec-info">
+				<h1>About Me</h1>
+				<p>Wanna know me??</p>
+			</div>
+			<div class="about-row">
+				<div class="about-left-col">
+					<img src="../static/images/profile.jpg">
+				</div>
+				<div class="about-right-col">
+					<h3 id="p-title">Hello, I am Ashish Nair & <br><span id="tpd1"></span><!-- I'm a Full Stack Developer --></h3>
+					<!-- <p>I'm a self taught web-developer, having said that I have a very strong hold on web-technologies like HTML, CSS, JavaScript, Flask(Python), Django(Python) and so on.</p> -->
+					<p>I've been learning the skill of developing websites from scratch to a full-fledged business product, for about 2 years, and now i think I should bring my learnings and skills to use for others benefits.</p>
+					<p>I also pursue other interests such as sports, cricket to be specific, reading books and some other activities that help me to develope as an individual</p>
+				</div>
+			</div>
+	</section>
+	<section id="skills">
+		<div class="sec-info">
+				<h1>Skills</h1>
+				<p>What are my skills??</p>
+		</div>
+		<div class="skill-row">
+			<div class="skill-left-col">
+				<p>I'm a self taught web-developer, having said that I have a very strong hold on web-technologies like HTML, CSS, JavaScript, Flask(Python), Django(Python) and so on.</p>				
+				<p id="p-text">Building webpages using HTML and CSS is something in which I excell, I can write code in multiple languages such as C++, Javascript, Python, HTML. </p>
+				<button class="btn" onclick="toggleHide()">Read More/Less</button>
+			</div>
+			<div class="skill-right-col">
+				<div class="progress-div">
+					<p>
+						<span>Python</span><br>
+						<progress value="80" max="100"></progress>
+						<span>80%</span>
+					</p>
+					<p>
+						<span>C++</span><br>
+						<progress value="70" max="100"></progress>
+						<span>70%</span>
+					</p>
+					<p>
+						<span>HTML</span><br>
+						<progress value="90" max="100"></progress>
+						<span>90%</span>
+					</p>
+					<p>
+						<span>Css</span><br>
+						<progress value="85" max="100"></progress>
+						<span>85%</span>
+					</p>
+					<p>
+						<span>JavaScript</span><br>
+						<progress value="40" max="100"></progress>
+						<span>40%</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="services">
+		<div class="sec-info">
+				<h1>Service</h1>
+				<p>What I provide??</p>
+		</div>
+		<div class="services-row">
+			<div class="services-box" data-tilt>
+				<img src="../static/images/b2.png">
+				<h2>Front-End Development</h2>
+				<p>Front-End Development is the practice of converting data to a graphical interface, through the use of HTML, CSS and JavaScript, so that users can view and interact with data.</p>
+			</div>
+			<div class="services-box" data-tilt>
+				<img src="../static/images/b2.png">
+				<h2>Full-Stack Web-Development</h2>
+				<p>Full stack development refers to the development of both front end(client side) and backend-end(server side) portions of the web applications.</p>
+			</div>
+			<div class="services-box" data-tilt>
+				<img src="../static/images/b2.png">
+				<h2>SEO(Search Engine Optimisation)</h2>
+				<p>SEO is the art and science of getting pages to rank higher in search engines such as Google.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="works">
+		<div class="sec-info">
+				<h1>Works!!</h1>
+				<p>Let's See My Projects</p>
+		</div>
+
+		<div class="services-row">
+			<div class="services-box" data-tilt>
+				<img src="../static/images/b2.png">
+				<h2>RedStore E-Commerce Website </h2>
+				<div class="redstore">
+					<a href="http://ashishn.pythonanywhere.com/" target="_blank"><img src="../static/images/logo.png"></a>
+				</div>
+			</div>
+	</section>
+
+	<section id="contact">
+		<div class="sec-info">
+				<h1>Contact</h1>
+				<p>Get in Touch</p>
+		</div>
+		<div class="contact-row">
+			<div class="contact-left">
+				<img src="../static/images/b3.png">
+			</div>
+			<div class="contact-right">
+				<form action="submit_form" method="post">
+					<h2>Connect with Me</h2>
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="E-mail">
+					<br>
+					<textarea cols="40" rows="10" name= "message" placeholder="Message"></textarea>
+					<br>
+					<button class="btn" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<h2>Developed By: <br>Ashish Nair</h2>
+		<img src="../static/images/icon.png" width="100px">
+	</section>
+<script type="text/javascript" src="../static/js/file1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+<script type="text/javascript" src="../static/js/jquery.ripples-min.js"></script>
+<!-- <script >
+	jQuery(document).ready(
+		function(){
+			$('header').ripples({
+ dropRadius: 20,
+ perturbance: 0.03,
+});
+		});
+</script> -->
+
+<script type="text/javascript" src="../static/js/typed.min.js"></script>
+<script type="text/javascript">
+	let animate = new Typed('#tpd', {
+		strings:["Full Stack Developer", "Front-End Developer", "Youtuber"],
+		typeSpeed:150,
+		backspeed: 150,
+		loop:true,
+	})
+
+	let animate1 = new Typed('#tpd1', {
+		strings:["I'm a Full Stack Developer"],
+		typeSpeed:100,
+		backspeed: 100,
+		loop:true,
+	})
+</script>
+<script type="text/javascript" src="../static/js/tilt.jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/splash.js"></script>
+<script type="text/javascript">
+	var preLoader = document.getElementById('loading');
+	function myPre(){
+		preLoader.style.display = 'none';
+	}
+</script>
+</body>
+</html>
