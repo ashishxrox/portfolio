@@ -25,3 +25,5 @@ window.addEventListener('DOMContentLoaded', ()=>{
 		}, 2302)
 	})
 })
+
+console.log('HELLO')
