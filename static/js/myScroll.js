@@ -24,6 +24,7 @@ const c1 = document.querySelector('.c1')
 const c2 = document.querySelector('.c2')
 const c3 = document.querySelector('.c3')
 const c4 = document.querySelector('.c4')
+const nav = document.querySelector('.nav')
 
 scroller.addEventListener('scroll', ()=>{
 	const scrolled = scroller.scrollTop;
@@ -38,18 +39,21 @@ scroller.addEventListener('scroll', ()=>{
 		img.classList.remove('appear')
 		section.classList.remove('appear')
 		about.classList.remove('appear')
+		/*nav.classList.add('sticky')*/
+
 	}
 	else if (Math.ceil(scrolled) > 300 && Math.ceil(scrolled)<=600){
 		img.classList.add('appear')
 		section.classList.add('appear')
 		about.classList.add('appear')
-		
+		/*nav.classList.add('sticky')*/
 	}
 	else if (Math.ceil(scrolled) <= 650 && Math.ceil(scrolled) > 400){
 		service.classList.remove('appear')
 		card1.classList.remove('appear')
 		card2.classList.remove('appear')
 		card3.classList.remove('appear')
+		/*nav.classList.add('sticky')*/
 	}
 	else if (Math.ceil(scrolled) >= 600 && Math.ceil(scrolled) <= 1100){
 		img.classList.remove('appear')
@@ -62,6 +66,7 @@ scroller.addEventListener('scroll', ()=>{
 		wCard1.classList.remove('appear')
 		wCard2.classList.remove('appear')
 		works.classList.remove('appear')
+		/*nav.classList.add('sticky')*/
 	}
 	else if (Math.ceil(scrolled) >= 1100 && Math.ceil(scrolled) <= 1700){
 		service.classList.remove('appear')
@@ -84,6 +89,7 @@ scroller.addEventListener('scroll', ()=>{
 		c2.classList.remove('line-animate')
 		c3.classList.remove('line-animate')
 		c4.classList.remove('line-animate')
+		/*nav.classList.add('sticky')*/
 	}
 	else if (Math.ceil(scrolled) >= 1700 && Math.ceil(scrolled) <= 2240){
 		works.classList.remove('appear')
@@ -102,6 +108,7 @@ scroller.addEventListener('scroll', ()=>{
 		c2.classList.add('line-animate')
 		c3.classList.add('line-animate')
 		c4.classList.add('line-animate')
+		/*nav.classList.add('sticky')*/
 	}
 	else if (Math.ceil(scrolled) >= 2240){
 		skills.classList.remove('appear')
@@ -117,6 +124,7 @@ scroller.addEventListener('scroll', ()=>{
 		c2.classList.remove('line-animate')
 		c3.classList.remove('line-animate')
 		c4.classList.remove('line-animate')
+		/*nav.classList.add('sticky')*/
 	}
 
 });

@@ -36,21 +36,54 @@
 
 	<div class="container">
 		<!-- HOME PAGE -->
-		<div class="section">
+		<div class="section" id="home">
 			<div class="content">
 				<header>
 					<div class="title">
-						<span>PORTF</span><span id="sec-head">OLIO</span>
+						<span id="fir-head">PORTF</span><span id="sec-head">OLIO</span>
 					</div>
-					<nav>
-						<ul>
-							<li>Home</li>
-							<li>About</li>
-							<li>Skills</li>
-							<li>Services</li>
-							<li>Works</li>
-							<li>Contact</li>
-						</ul>
+					<nav class="nav">
+						<div class="navigation">
+							<ul>
+								<li class="list active">
+									<a href="#home">
+										<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+										<span class="text">Home</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href="#about">
+										<span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+										<span class="text">About</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href="#services">
+										<span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
+										<span class="text">Services</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href="#works">
+										<span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span>
+										<span class="text">Works</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href="#skills">
+										<span class="icon"><ion-icon name="library-outline"></ion-icon></span>
+										<span class="text">Skills</span>
+									</a>
+								</li>
+								<li class="list">
+									<a href="#contact">
+										<span class="icon"><ion-icon name="call-outline"></ion-icon></span>
+										<span class="text">Contact</span>
+									</a>
+								</li>
+								<div class="indicator"></div>
+							</ul>
+						</div>
 					</nav>
 				</header>
 				<div class="home">
@@ -61,7 +94,7 @@
 			</div>
 		</div>
 		<!-- ABOUT PAGE -->
-		<div class="section">
+		<div class="section" id="about">
 			<div class="content about">
 				<div class="sec-info">
 					<h2>About Me</h2>
@@ -81,7 +114,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="services">
 			<div class="content services">
 				<div class="sec-info2">
 					<h2>Services</h2>
@@ -124,7 +157,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="works">
 			<div class="content works">
 				<div class="sec-info3">
 					<h2>Services</h2>
@@ -161,7 +194,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="section skills">
+		<div class="section skills" id="skills">
 			<div class="sec-info4">
 					<h2>Skills</h2>
 				</div>
@@ -222,10 +255,58 @@
 			</div>
 				
 		</div>
-		<div class="section">
-			<div class="content">
-				<h2>Section Six</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nesciunt! Repudiandae officiis quo, animi. Tempora optio quibusdam, veritatis tempore esse neque enim, sequi corrupti veniam dignissimos voluptatem. Molestiae eius, cupiditate voluptate voluptatibus.</p>
+		<!-- CONTACT BOX -->
+		<div class="section contact" id="contact">
+			<div class="contact-cont">
+				<h2>Contact Us</h2>
+				<div class="row100">
+					<div class="column">
+						<div class="inputBox">
+							<input type="text" name="" required="required">
+							<span class="text">First Name</span>
+							<span class="line"></span>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inputBox">
+							<input type="text" name="" required="required">
+							<span class="text">Last Name</span>
+							<span class="line"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="row100">
+					<div class="column">
+						<div class="inputBox">
+							<input type="text" name="" required="required">
+							<span class="text">Email</span>
+							<span class="line"></span>
+						</div>
+					</div>
+					<div class="column">
+						<div class="inputBox">
+							<input type="text" name="" required="required">
+							<span class="text">Mobile</span>
+							<span class="line"></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="row100">
+					<div class="column">
+						<div class="inputBox textarea">
+							<textarea required="required"></textarea>
+							<span class="text">Type Your Message...</span>
+							<span class="line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row100">
+					<div class="column">
+						<input type="submit" value="send">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -247,6 +328,8 @@
 	})
 </script>
 <script src="../static/js/myScroll.js"></script>
-
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="../static/js/navbar.js"></script>
 </body>
 </html>
