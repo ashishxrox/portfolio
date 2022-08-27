@@ -1,4 +1,10 @@
+
+
+
+
 let scroller = document.querySelector('.container')
+
+/*const nav = document.querySelector('.nav')*/
 const img = document.querySelector('.about-col-left')
 const section = document.querySelector('.sec-info')
 const about = document.querySelector('.about-col-right')
@@ -24,7 +30,7 @@ const c1 = document.querySelector('.c1')
 const c2 = document.querySelector('.c2')
 const c3 = document.querySelector('.c3')
 const c4 = document.querySelector('.c4')
-const nav = document.querySelector('.nav')
+
 
 scroller.addEventListener('scroll', ()=>{
 	const scrolled = scroller.scrollTop;
@@ -32,6 +38,7 @@ scroller.addEventListener('scroll', ()=>{
 	if (Math.ceil(scrolled) <= 200){
 		home.classList.remove('to-left')
 		title.classList.remove('to-top')
+		/*nav.classList.add('sticky')*/
 	}
 	else if (Math.ceil(scrolled) >= 200 && Math.ceil(scrolled)<=300){
 		home.classList.add('to-left')

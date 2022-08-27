@@ -11,10 +11,13 @@ def html_page(page_name):
 
 def write_to_file(data):
 	with open('database.txt', mode='a') as database:
-		Name = data["name"]
+		fName = data["fName"]
+		lName = data["lName"]
 		email = data["email"]
+		mobile = data["mobile"]
 		message = data["message"]
-		file = database.write(f'\n{Name}, {email}, {message}')
+		
+		file = database.write(f'\n{fName}, {lName}, {email}, {mobile}, {message} ')
 
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
@@ -22,6 +25,6 @@ def submit_form():
     if request.method == 'POST':
     	data = request.form.to_dict()
     	write_to_file(data)
-    	return redirect('thankyou.html')
+    	return render_template('home.html')
     else:
     	return 'something went wrong. Try again!!!'

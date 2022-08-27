@@ -50,3 +50,21 @@
 #third{
 	margin-left: 75px;
 }
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 750px){
+	.logo{
+		font-size: 50px;
+	}
+	.logo-header{
+		left: 40%;
+		margin: auto;
+	}
+	#sec{
+		margin-left: 0;
+	}
+	#third{
+		margin-left: 40px;
+	}	
+}
